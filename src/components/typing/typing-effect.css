@@ -1,0 +1,51 @@
+/* styles.css */
+.typing-effect {
+    font-family: monospace;
+    position: absolute;
+    width: 80%;
+    height: 0.5rem;
+    margin-top: 4rem;
+    text-shadow: #07f;
+    height: auto;
+    font-weight: 700;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 25px;
+    animation: slide-in 0.5s ease-in-out forwards, slide-out 0.5s ease-in-out 8s forwards, blink-caret 0.75s step-end infinite
+    , text-glow 2s infinite;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      top: -400px;
+    }
+    100% {
+      top: 20px; /* Slide in from the right to this position */
+    }
+  }
+  
+  @keyframes slide-out {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: -400px; /* Slide out to the right and disappear */
+    }
+  }
+  
+  @keyframes text-glow {
+    0% {
+      text-shadow: 0 0 10px rgb(255, 0, 0); /* Start with a glow */
+    }
+    50% {
+      text-shadow: 0 0 15px rgb(0, 255, 21); /* Increase the glow */
+    }
+    100% {
+      text-shadow: 0 0 10px rgb(221, 0, 255); /* Back to the initial glow */
+    }
+  }

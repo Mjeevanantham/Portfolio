@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 4rem;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+
+}
+
+.dept{
+  margin-top: 0.2rem;
+  font-weight: 300;
+  font-size: 17px;
+  color: var(--gray);
+}
+
+
+
+.about{
+  margin-top: 0.5rem;
+  text-indent: 15%;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-weight: 100;
+  width: 95%;
+  font-size: 15px;
+  color: var(--gray);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+.i-icons {
+  margin-top: 0.2rem;
+  display: flex;
+  gap: 0rem;
+}
+
+.git {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+  animation: floatWaves 3s infinite alternate;
+}
+.link {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+  animation: floatWaves 2s infinite alternate;
+}
+.leet {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+  animation: floatWaves 3s infinite alternate;
+}
+.twit {
+  margin-top: 2rem;
+  width: fit-content;
+  display: flex;
+  gap: 0rem;
+  animation: floatWaves 2s infinite alternate;
+}
+.call {
+  margin-top: 2rem;
+  display: none;
+  gap: 0rem;
+  animation: floatWaves 3s infinite alternate;
+}
+
+.mess {
+  margin-top: 2rem;
+  display: flex;
+  cursor: pointer;
+  gap: 0rem;
+  animation: floatWaves 3s infinite alternate;
+}
+
+.i-icons > * {
+  transform: scale(0.5);
+}
+
+
+@keyframes floatWaves {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* right side styling */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+  display: none;
+}
+.i-right > :nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+  display: none;
+
+}
+.i-right {
+  position: relative;
+}
+
+.i-right > :nth-child(3) {
+  position: absolute;
+  left: 15%;
+  height: 20.375rem;
+  width: 20.8125rem;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Added opacity transition */
+  opacity: 1;
+  object-fit: cover;
+  z-index:1;
+  background: linear-gradient(45deg, rgba(48, 45, 255, 0.64) 0%, rgba(227, 41, 227, 0.64) 100%); 
+  -moz-box-shadow: 0px 0px 173px 16px rgba(178, 45, 255, 0.64);
+  box-shadow: 0px 0px 173px 16px rgba(231, 19, 206, 0.64);
+}
+
+
+.i-right > :nth-child(4)  {
+  display: none; 
+}
+
+.i-right:hover > :nth-child() {
+  transform: scale(1.4);
+  display: flex;
+  transition: transform all 5s ;
+  z-index:99;
+
+ 
+}
+
+.i-right:hover > :nth-child(4){
+  display: none; 
+  position: absolute;
+  left: 15%;
+  height: 20.375rem;
+  width: 20.8125rem;
+  transition: transform all 5s ;
+  object-fit: cover;
+  opacity: 1; 
+  border-radius: 200px;
+  z-index: 1;
+}
+
+
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width: 580px) {
+  body{
+    width: 100%;
+  }
+  .Intro {
+    flex-direction: column;
+    gap: 2rem;
+    height: 64rem;
+    
+  }
+  .i-left {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+    right: 60%;
+  }
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+  
+  }
+
+  .about{
+    margin-top: 0.5rem;
+    text-indent: 15%;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    width: 100%;
+    font-size: 15px;
+    color: var(--gray);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1){
+    /* display: none; */
+    top: -3.5rem !important;
+    border-right: rgb(183, 0, 0) solid 2px;
+    border-top: rgb(183, 0, 0) solid 2px;
+    border-radius: 20%;
+  }
+  .floating-div:nth-of-type(2){
+    border: rgb(183, 0, 0) solid 2px;
+    border-radius: 20%;
+    top: 22rem !important;
+
+  }
+  .i-icons {
+    width: 100%;
+    margin-top: 0rem;
+    display:flex;
+    flex-wrap:  wrap;
+    object-fit: cover;
+    justify-content: center;
+    align-items:center;
+  }
+  .git {
+    margin-top: 0rem;
+    display: flex;
+    animation: floatWaves 3s infinite alternate;
+  }
+  .link {
+    margin-top: 0rem;
+    display: flex;
+    animation: floatWaves 2s infinite alternate;
+  }
+  .leet {
+    display: flex;
+    margin-top: 0rem;
+    animation: floatWaves 3s infinite alternate;
+  }
+  .twit {
+    display: flex;
+    margin-top: 0rem;
+    animation: floatWaves 2s infinite alternate;
+  }
+  .call {
+    display: flex;
+    margin-top: 0rem;
+    animation: floatWaves 3s infinite alternate;
+  }
+  
+  .mess {
+    display: flex;
+    margin-top: 0rem;
+    animation: floatWaves 2s infinite alternate;
+  }
+  .i-right > :nth-child(3) {
+    position: absolute;
+    left: 15%;
+    height: 20.375rem;
+    width: 20.8125rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 8.1375rem; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Added opacity transition */
+    opacity: 1;
+    z-index: 999;
+  }
+  .i-right:hover > :nth-child(3) {
+    transform: scale(1.4);
+    display: none;
+    transition: transform all 5s ;
+  }
+  .i-right > :nth-child(4)  {
+    display: none; 
+  }
+  .i-right:hover > :nth-child(4){
+    display: flex; 
+    position: absolute;
+    left: 15%;
+    height: 20.375rem;
+    width: 20.8125rem;
+    transition: transform all 5s ;
+    object-fit: cover;
+    opacity: 1; 
+    z-index: 1;
+    top: 7%;
+  }
+}
+
+

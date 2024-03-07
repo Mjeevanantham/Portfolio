@@ -1,0 +1,174 @@
+.body{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* cursor: none; */
+}
+
+
+.info{
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    display:inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.2s ease; /* Add a smooth transition effect */
+
+}
+
+.info:hover {
+    animation: shake 5s ease infinite;
+    cursor: none;
+}
+
+.time{
+    width: auto;
+    height: auto; 
+    padding: 10px;
+    display: flex;
+    border-radius: 25px;
+    font-weight: bold;
+    color: rgb(55, 3, 3);
+    background-color: var(--orange);
+    -webkit-box-shadow:0px 0px 29px 6px rgba(18,255,184,0.7);
+-moz-box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+}
+
+.battery{
+    width: auto;
+    height: auto;
+    padding: 10px; 
+  border-radius: 25px;
+  border-bottom: 1px solid pink;
+  border-right: 1px solid pink;
+  -webkit-box-shadow:0px 0px 29px 6px rgba(18,255,184,0.7);
+-moz-box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+box-shadow: 0px 0px 29px 6px rgba(22, 18, 255, 0.7);
+
+
+}
+.mail{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  color: var(--orange);
+  animation: colorChange 10s ease infinite; /* Change color over 5 seconds with ease-in-out timing and repeat infinitely */
+  border-radius: 25px;
+  border-bottom: 1px solid pink;
+  border-right: 1px solid pink;
+  -webkit-box-shadow:0px 0px 29px 6px rgba(18,255,184,0.7);
+  -moz-box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+  box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+
+}
+.ip{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: var(--orange);
+    animation: colorChange 10s ease infinite; /* Change color over 5 seconds with ease-in-out timing and repeat infinitely */
+    border-radius: 25px;
+    border-bottom: 1px solid pink;
+    border-right: 1px solid pink;
+
+}
+.city{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: var(--orange);
+    animation: colorChange 10s ease infinite; /* Change color over 5 seconds with ease-in-out timing and repeat infinitely */
+    border-radius: 25px;
+  border-bottom: 1px solid pink;
+  border-right: 1px solid pink;
+
+
+}
+.lat{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    color: var(--orange);
+    border-radius: 10px;
+    border-bottom: 1px solid pink;
+    border-right: 1px solid pink;
+    -webkit-box-shadow:0px 0px 29px 6px rgba(18,255,184,0.7);
+    -moz-box-shadow: 0px 0px 29px 6px rgba(18,255,184,0.7);
+    box-shadow: 0px 0px 29px 6px rgba(212, 18, 255, 0.7);
+
+}
+.long{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: var(--orange);
+    animation: colorChange 10s ease infinite; /* Change color over 5 seconds with ease-in-out timing and repeat infinitely */
+    border-radius: 25px;
+    border-bottom: 1px solid pink;
+    border-right: 1px solid pink;
+
+}
+
+p{
+    font-size: small;
+    right: 0;
+    margin-left: 50%;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes colorChange {
+    0% {
+      color: rgb(33, 207, 255); /* Initial text color */
+    }
+    25% {
+      color: blue; /* Final text color */
+    }
+    50% {
+      color: rgb(0, 255, 13); /* Final text color */
+    }
+    750% {
+      color: purple; /* Final text color */
+    }
+    90% {
+      color: red; /* Final text color */
+    }
+    100% {
+      color: rgb(33, 207, 255); /* Final text color */
+    }
+  }
+  
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0); /* Initial and final position (no movement) */
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px); /* Move left */
+    
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px); /* Move right */
+    }
+  }
+
+  
+@media screen and (max-width: 480px){
+  .body{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+}

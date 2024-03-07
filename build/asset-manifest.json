@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b3e56ed.css",
+    "main.js": "/static/js/main.4a936e9c.js",
+    "static/media/ecommerce.png": "/static/media/ecommerce.86d6637605cf50113a67.png",
+    "static/media/jeeva resume.pdf": "/static/media/jeeva resume.278becc557257b17a8e9.pdf",
+    "static/media/musicapp.png": "/static/media/musicapp.cd29a449ddc0c899b4dc.png",
+    "static/media/boy1.png": "/static/media/boy1.df5925ff063b5c470017.png",
+    "static/media/sidebar.png": "/static/media/sidebar.049efba9bb765ade381d.png",
+    "static/media/boys.png": "/static/media/boys.9f6afab01a23179b346f.png",
+    "static/media/crown.png": "/static/media/crown.6a0a2b949139e0fc2c94.png",
+    "static/media/hoc.png": "/static/media/hoc.e6af51fc04c57ae67096.png",
+    "static/media/heartemoji.png": "/static/media/heartemoji.d7a6f9406eb8ba1c3361.png",
+    "static/media/linkedin.png": "/static/media/linkedin.375093d58bacaaabe769.png",
+    "static/media/thumbup.png": "/static/media/thumbup.e06790ba656f0397cbe5.png",
+    "static/media/humble.png": "/static/media/humble.4c1537953582170dba60.png",
+    "static/media/github.png": "/static/media/github.ecb1bc771f3f91224e2a.png",
+    "static/media/Shopify.png": "/static/media/Shopify.446c2cc20b8b1b41b2ce.png",
+    "static/media/Vector2.png": "/static/media/Vector2.28db5bfd58081dd1df1b.png",
+    "static/media/mail.png": "/static/media/mail.5ee2126b073819a9e0e2.png",
+    "static/media/phone.png": "/static/media/phone.bb4e041025e26560d37d.png",
+    "index.html": "/index.html",
+    "main.4b3e56ed.css.map": "/static/css/main.4b3e56ed.css.map",
+    "main.4a936e9c.js.map": "/static/js/main.4a936e9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b3e56ed.css",
+    "static/js/main.4a936e9c.js"
+  ]
+}
